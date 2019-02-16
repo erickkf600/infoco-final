@@ -1,0 +1,21 @@
+.img-ass
+  @include back (url("../img/assina.png"))
+  @include celular-md
+    background: #494949
+  .container
+    text-align: center
+    padding: 25px 0
+    h2
+      color: #fff7f7
+      font-size: 45px
+      @include celular
+        font-size: 25px
+    span
+      @extend %color-laranja
+    p
+      color: #ccc
+      font-size: 17px 
+    a
+      @extend %botao  
+    i
+      margin-left: 5px   

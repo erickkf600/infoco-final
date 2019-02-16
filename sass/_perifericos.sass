@@ -1,0 +1,116 @@
+#preloader
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: #fff
+  z-index: 99999
+.loader
+  font-size: 10px
+  text-indent: -9999em
+  top: 300px
+  margin: 0 auto
+  width: 11em
+  height: 11em
+  border-radius: 50%
+  @extend %p-relative
+  @include animacao(load3 1.4s infinite linear)
+  @include transform(translateZ(0))
+  &:after
+    background: #fff
+    width: 75%
+    height: 75%
+    @include border-radius(50%)
+    content: ''
+    margin: auto
+    @extend %p-absolute
+    top: 0
+    left: 0
+    bottom: 0
+    right: 0
+  &:before
+    content: ''
+    width: 50%
+    height: 50%
+    @include border-radius(100% 0 0 0)
+    @extend %p-absolute
+    top: 0
+    left: 0
+    
+@include keyframe( load3 )
+  0% 
+    @include transform(rotate(0deg))
+  100%
+    @include transform(rotate(360deg))     
+
+/*ROLAR PARA CIMA*/
+.scrollToTop
+  position: fixed
+  bottom: 20px
+  right: 30px
+  font-size: 20px
+  border: none
+  z-index: 9999
+  outline: none
+  @extend %color-branco
+  background: rgba(0,7,142,0.6) 
+  cursor: pointer
+  padding: 7px 15px
+  border-radius: 4px 
+  @extend %t-3s
+  &:hover
+    color: rgba(0,7,142,0.6) 
+    @extend %gradient-laranja
+/*ROLAR PARA BAIXO*/ 
+   
+.scrolldown
+  position: absolute
+  bottom: 0
+  right: 0
+  -webkit-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  transform: rotate(90deg)
+  -webkit-transform-origin: right top 0
+  -ms-transform-origin: right top 0
+  transform-origin: right top 0
+  float: right
+  z-index: 1
+  @extend %color-branco
+  @include tablet
+    display: none 
+  i
+    padding-left: 9px
+  a
+    font:
+      size: 1rem
+      weight: bold
+    text:
+      transform: uppercase
+      shadow: 1px 2px 1px #000
+    @extend %d-inline-block 
+    letter-spacing: 1.4px
+    @extend %back-transparent
+    @extend %p-relative
+    cursor: default
+    top: 36px
+    right: 42px
+    @include transition(.2s)
+    @include animacao(down .5s ease-in-out infinite alternate) 
+    &:hover
+      text-decoration: none
+      @extend %color-laranja
+      font-size: 1.2rem
+@include keyframe(down)
+  0%
+    left:0
+  100%
+    left: 15px
+
+//BOTÕES DO SLIDE TOP
+.voltar, .proximo
+  i
+    text-shadow: 2px 2px 8px #444444
+
+       
+

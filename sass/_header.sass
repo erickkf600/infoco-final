@@ -1,0 +1,165 @@
+.logo
+  margin-top: -1px
+  @include transition(.3s)
+  @include tablet
+    padding-left: 20px  
+  @include celular-s
+    margin-top: 5px
+    height: 60px
+  img
+    width: 240px
+    padding-top: 15px
+    @include celular-s
+      width: 200px 
+    @include celular-xs
+      width: 175px   
+.logo.up
+  @include tablet-mini
+    opacity: 0 
+    @include transition(all .3s)
+    @include transform(translateY(-100%))
+
+#header
+  @extend %d-flex
+  flex-flow: column
+  border-bottom: 1px solid #f9f9f9
+  @include box-shadow(0 2px 6px rgba(0,0,0,0.3))
+  @extend %back-branco
+  #navbar
+    @extend %d-flex 
+    @extend %p-relative
+    ul
+      @extend %d-flex
+      flex-flow: row
+      @include tablet-mini
+        display: none
+      li
+        margin: 32px 20px 0 10px
+        @include transition(.7s)
+        @include pc-md
+          margin: 32px 16px 0 5px  
+        @include tablet
+          margin: 20px 15px 0 10px  
+        a
+          color: #7a7a7a
+          @extend %spacing 
+          font:
+            size: 17px
+          @extend %font
+          &:after
+            content: ''
+            display: block
+            width: 0
+            height: 3px 
+            @extend %back-laranja
+            @include transition(.5s)
+          &:hover
+            text-decoration: none
+            &:after
+              width: 100%  
+#header.down
+  background: rgba(255,255,255,.95)
+  @extend %p-fixed
+  width: 100%
+  z-index: 9999
+  @include transition(all .6s)
+  @include animacao( nav-down 0.7s) 
+  @include keyframe( nav-down )
+    0%
+      @include transform(translateY(-100%))
+    100%
+      @include transform(translateY(0))                
+#navbar.sumir   
+  ul
+    overflow-y: hidden 
+    li
+      opacity: 0
+      @include transition(all .4s) 
+      &:nth-child(even)
+        @include transform(translateY(-100%))
+      &:nth-child(odd)
+        @include transform(translateY(100%))
+.pesq-icon
+  cursor: pointer
+  border: none
+  @extend %back-laranja
+  @extend %color-branco
+  margin: 30px 0 0 55px  
+  height: 35px
+  padding: 5px 20px 15px 20px
+  @include transition(.5s)
+  @include back(url("../img/search-icon.png"))  
+  &:focus
+    outline: none
+  @include pc-md
+    margin: 25px 0 0 5px  
+  @include tablet
+    margin: 15px 0 0 5px         
+.pesq-icon.close 
+  cursor: pointer
+  border: none
+  @extend %back-laranja
+  @extend %color-branco
+  margin: 30px 0 0 55px  
+  height: 35px
+  padding: 5px 13px 13px 13px   
+  &:before
+    content: '\f00d'
+    @extend %color-branco
+    font:
+      family: "Font Awesome 5 Free" 
+      weight: 900
+      size: 20px
+  @include tablet
+    margin: 15px 0 0 5px     
+
+
+.search-area
+  @extend %p-absolute
+  right: 40px
+  top: 20px
+  width: 0 
+  z-index: 999
+  @include transition (all .7s) 
+  @include tablet-mini
+    right: 40px
+    top: 5px               
+  #pesquisar
+    width: 100%
+    height: 45px 
+    border-bottom: solid 2px $laranja
+    border-top: none
+    border-right: none
+    border-left: none  
+    @extend %back-transparent
+  @include placeholder 
+    color: #aaa
+    font:
+      size: 20px
+      weight: 600  
+.search-area.exibir
+  width: 100%
+  opacity: 1
+  @include pc-md
+    width: 95%
+  @include tablet
+    width: 100% 
+    top: 5px
+  @include tablet-mini
+    right: 40px
+    top: 5px
+    width: 600px 
+  @include celular
+    width: 410px
+  @include celular-md
+    width: 270px
+  @include celular-s
+    width: 220px   
+  @include celular-xs
+    width: 200px      
+         
+
+
+
+  
+    

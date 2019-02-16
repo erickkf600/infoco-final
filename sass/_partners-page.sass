@@ -1,0 +1,75 @@
+#partners
+  background: #f8f8f8
+  padding: 3rem 0
+.esquerda
+   @extend %back-branco
+   padding: 3rem 0 3rem 0
+   border: 1px solid #f0f0f0 
+   @include full-hd
+     padding: 3rem 2rem 3rem 2rem 
+   h3 
+     font-size: 14px !important 
+     @include pc-md
+       height: 25px !important
+
+.direita
+  @extend %back-branco
+  border: 1px solid #f0f0f0
+  margin-bottom: 30px
+  padding: 20px 30px 
+  @include tablet-mini
+    margin-top: 2rem 
+  h2
+    color: #444444
+    font-size: 25px
+    line-height: 25px
+    margin-bottom: 15px
+    margin-left: -31px
+    padding: 0 29px 0 
+  .intagram
+    display: flex
+    justify-content: space-between
+    a
+      &:hover
+        text-decoration: none
+        @extend %color-laranja  
+  input
+    background: #f5f5f5
+    border: 1px solid #9d9d9d
+    color: #444
+    height: 43px
+    padding: 5px
+    width: 100%
+    @extend %t-3s
+    &:focus
+      outline: none
+      border: solid 1px $laranja
+      box-shadow: 0 0 0 0.1rem $laranja 
+  button             
+    margin: 12px 0 10px 0
+    padding: 7px 30px
+    @extend %back-laranja
+    @extend %color-branco
+    border: 2px solid $laranja
+    @extend %font
+    font:
+      size: 17px
+      weight: 600
+    &:hover
+      @extend %color-laranja  
+      @extend %back-transparent
+
+.paginacao
+  a
+    margin-top: 20px
+    border: 1px solid #ccc
+    padding: 8px 10px
+    @extend %t-3s
+    @extend %color-branco
+    @extend %back-laranja
+    &:hover
+      @extend %color-laranja
+      @extend %back-transparent 
+    span
+      padding: 8px 10px    
+                    

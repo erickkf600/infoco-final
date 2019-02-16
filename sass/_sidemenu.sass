@@ -1,0 +1,131 @@
+.sidebar-logo
+  display: flex
+
+.menu
+  @extend %p-absolute
+  left: 1%
+  top: 25px 
+  &:hover
+    cursor: pointer
+  i
+    color: #fff
+    text-align: center 
+    font-size: 2rem 
+    @extend %back-laranja
+    padding: 7px
+    @include border-radius(2px)
+/*  NAV 
+ * ========================================== */
+    
+#nav 
+  @extend %gradient-laranja
+  @extend %p-fixed
+  z-index: 1050
+  top: 0
+  left: 0
+  height: 100%
+  max-width: 260px
+  width: 100%
+  padding: 50px 30px 50px 20px
+  @include transform(translateX(-100%))
+  @include transition(transform 0.55s cubic-bezier(0.785, 0.135, 0.15, 0.86))
+  @include tablet
+    max-width: 400px  
+  .categ, .menu-mobile
+    border: 1px solid #fff
+    margin: 0 auto
+    pointer-events: none
+    @extend %color-branco
+    cursor: default
+    text-align: center
+    font:
+      weight: 600
+      size: 20px
+    line-height: 45px
+  .first
+      padding-top: 5rem  
+  span
+    display: none
+  @include full-hd
+    max-width: 400px
+    padding: 150px 30px 70px 50px
+  @include tablet-mini 
+    max-width: 350px
+    overflow-y: auto 
+  @include celular
+    max-width: 310px   
+    span
+      display: block
+  ul
+    list-style-type: none
+    li
+      @include transform(translateX(40px))
+      border-bottom: 1px solid #ccc
+      opacity: 0
+      @include transition(all .3s ease)
+      float: none
+      @extend %color-branco
+      a 
+        @extend %color-branco
+        @extend %p-relative 
+        padding-left: 5rem
+        text:
+          decoration: none
+          align: center
+          transform: uppercase 
+        font:
+          size: 1rem
+          weight: 600
+        @include full-hd
+          font-size: 1.5rem
+        @include tablet-mini 
+          font-size: 1.3rem  
+        display: block
+        padding: 12px 0
+        @include transition(all .3s ease)
+        &:hover
+          color: #b7ac7f
+        i 
+          float: left
+
+ 
+ 
+#nav.show
+  @include transform(translateX(0px))
+  display: block
+  ul
+    li 
+      @include transform(translateX(0px))
+      opacity: 1
+      &:nth-child(1)
+        transition-delay: 0.15s
+      &:nth-child(2)
+        transition-delay: 0.3s
+      &:nth-child(3)
+        transition-delay: 0.45s
+      &:nth-child(4)
+        transition-delay: 0.6s
+      &:nth-child(5)
+        transition-delay: 0.75s
+      &:nth-child(6)
+        transition-delay: 0.9s
+      &:nth-child(7) 
+        transition-delay: 1.05s
+      &:nth-child(8) 
+        transition-delay: 1.2s 
+      &:nth-child(9) 
+        transition-delay: 1.35s
+      &:nth-child(10) 
+        transition-delay: 1.5s     
+#fechar
+  @extend %p-absolute
+  top: 0
+  right: 0 
+  border: none
+  cursor: pointer
+  @extend %back-transparent
+  @extend %color-branco
+  font-size: 30px
+  &:focus
+    outline: none        
+          

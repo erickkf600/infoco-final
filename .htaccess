@@ -1,0 +1,10 @@
+RewriteEngine on
+Options All -Indexes
+ErrorDocument 403 "Desculpe! acesso nao permitido!"
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?pagina=$1 [L,QSA]
+
+
+
+

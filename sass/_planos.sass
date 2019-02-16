@@ -1,0 +1,155 @@
+.confira
+  h2
+    padding-top: 15rem
+    color: #3d3d3d
+    letter-spacing: 2px 
+    font:
+      family: sans-serif
+      size: 3rem
+      weight: 900   
+  p
+    letter-spacing: 2px
+    color: #3d3d3d
+    font:
+      family: sans-serif
+      size: 18px 
+      weight: 600
+.artes
+  p
+    font-size: 15px
+
+.tabela 
+  h1
+    font-size: 25px
+    
+#bg-laranja
+  background: #ea923a    
+.list-mobile
+  display: none
+  @extend %color-branco
+  letter-spacing: 1.2px 
+  font: 
+    size: 18px
+    weight: bold
+  @include tablet-mini
+    display: block 
+.beneficios
+  @include tablet-mini
+    display: none 
+  li
+    @extend %back-laranja
+    border-bottom: 2px solid #e5a253
+    color: #f1f1f1
+    font:
+      size: 16px
+      weight: 600
+    padding: 15px 24px
+    &:hover
+      background: #e5a253
+      cursor: pointer
+      @include transition(all .35s)
+  h1
+    border-top-left-radius: 20px
+    margin: 5rem 0 0 0
+    padding-bottom: 10rem
+    text-align: center 
+
+.tabela-plano, .fim 
+  li
+    background: #fff
+    border-bottom: 2px solid #d4d4d4
+    text-align: center
+    cursor: pointer
+    padding: 10.55px 24px
+    @include pc-md
+      padding: 13.35px 24px
+    &:hover
+      background: #dedede
+      @include transition(all .35s)
+       
+
+.beneficios, .tabela-plano, .fim
+  h1
+    background: #001e82
+     border-left: 2px solid #ccc
+    @extend %color-branco
+    font-weight: 600
+    padding: 19px 21px
+    text:
+      transform: uppercase
+      align: center
+    @include tablet
+      font-size: 21px  
+.fim 
+  h1
+    border-top-right-radius: 20px
+.tabela-plano 
+  padding-bottom: 5rem
+  li
+    border-right: 2px solid #d4d4d4
+    @include tablet-mini
+      display: flex   
+      justify-content: space-between
+    span
+      display: none
+      @include tablet-mini
+        display: block 
+    p
+      font-weight: 600     
+             
+  h1
+    margin: 5rem 0 0 0    
+
+.fa
+  &.fa-check
+    color: #2cc14f
+  &.fa-times
+    color: #BA5340
+  font-size: 30px
+
+.no-padding, ul
+  padding: 0
+
+
+.logos
+  padding: 10rem 0 10rem
+  @include celular
+    padding: 0
+  text-align: center
+  img
+    width: 40% 
+    align-items: center
+    margin-top: 3rem
+    @include tablet-mini
+      width: 25% 
+  h3
+    letter-spacing: 1.2px 
+    font: 
+      size: 25px
+      weight: 900  
+
+.contato-text, .adesao-btn
+  text-align: center
+  padding-bottom: 60px
+  p
+    padding-bottom: 10px
+    letter-spacing: 1.2px 
+    font: 
+      size: 25px
+      weight: 900
+    @include tablet-mini
+      font-size: 20px  
+  a
+    border: 3px solid $laranja
+    padding: 10px 20px 10px 20px
+    @extend %color-laranja
+    font-weight: 600 
+    @include transition(.3s)
+    &:hover
+      @extend  %color-branco
+      @extend %back-laranja
+      text-decoration: none
+.adesao-btn
+  a
+    font-size: 25px    
+ 

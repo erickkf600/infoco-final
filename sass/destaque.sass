@@ -1,0 +1,68 @@
+#parceiros
+  background:#23282d
+  padding: 70px 0 30px 0
+  min-width: 100%
+  text-align: center 
+  p
+    padding-bottom: 3rem
+    color: #ccc
+    font-weight: 600
+    @extend %spacing
+  .container
+    @include full-hd
+      min-width: 75% 
+    @include celular
+      min-width: 100% 
+    @include celular-md
+      padding: 0    
+#cards
+  margin: 0 auto
+  width: 86% 
+  @include full-hd
+    width: 100% 
+  @include tablet-mini
+    min-width: 100%  
+  .card
+    @extend %back-transparent
+    @include border-radius(0)
+    border: solid .5px #707070
+    padding: 0
+    margin: 8px 0
+    img
+      width: 100% 
+      padding: 7px 
+  .card-content
+    padding: 0 5px 5px 5px
+    margin: 0
+    h3
+      color: #ccc 
+      font-size: 17px
+      text:
+        transform: uppercase
+        align: center 
+      @include pc-md
+        height: 35px   
+      @include tablet
+        font-size: 14px
+      @include celular
+        font-size: 10px
+        height: 20px 
+        line-height: 20px           
+    a
+      color: #fff
+      border: solid .5px $laranja
+      @extend %back-laranja 
+      @extend %t-3s
+      &:hover
+        @extend %color-laranja
+        @extend %back-transparent         
+
+.ver-mais
+  @extend %botao
+
+
+
+  
+
+    
+

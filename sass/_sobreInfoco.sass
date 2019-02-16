@@ -1,0 +1,96 @@
+.cabecalho
+  @extend %p-relative
+  text-align: center
+  width: 100%
+  padding: 3rem 0 20px 0
+  h1
+    color: #3a3a3a
+    margin-bottom: 0
+    padding-bottom: 18px
+    font:
+      size: 41px
+      weight: bold
+  span
+    @extend %color-laranja         
+  p
+    max-width: 85%
+    color: #686868
+    margin: 0 auto
+    padding-bottom: 30px
+    @extend %spacing
+    font:
+      size: 18px
+      weight: 400
+    @include tablet-mini
+      max-width: 100%
+      
+
+.itens-infoco
+  text-align: center 
+  i
+    border-radius: 100% 
+    border: 1px solid $laranja
+    font-size: 35px
+    height: 117px
+    line-height: 117px
+    text-align: center
+    width: 117px
+    @extend %color-laranja
+    @extend %t-3s
+  h2
+    color: #525252
+    text-transform: uppercase
+    font-size: 18px
+    border-bottom: 1px solid #bbbbbb
+    margin-top: 32px
+    padding-bottom: 17px
+    @include pc-md
+      font-size: 16px 
+  p
+    color: #7d7d7d
+    font-size: 15.5px
+    padding: 12px
+  li
+    &:hover
+      i
+        @extend %back-laranja
+        @extend %color-branco
+      h2
+        border-bottom: 2px solid $laranja 
+        padding-bottom: 16px     
+
+.video-setor
+  margin-top: 3rem 
+  margin-bottom: 4rem
+  @include full-hd
+    margin-right: 50px
+  h2
+    color: #3a3a3a
+    margin-bottom: 0
+    padding-bottom: 18px
+    font:
+      size: 43px
+      weight: 400 
+    @include celular-md
+      font-size: 30px  
+  span
+    @extend %color-laranja        
+  .texto-video
+    padding-left: 85px
+    padding-top: 10px 
+    @include celular
+      padding-left: 10px
+    p
+      text-align: justify
+      color: #535353
+      margin-bottom: 32px
+      font:
+        size: 19px
+        weight: 400 
+      @include full-hd
+        max-width: 80%
+    a
+      @extend %botao  
+
+.video
+  border: 2px ridge $laranja  
