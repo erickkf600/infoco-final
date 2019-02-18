@@ -1,40 +1,30 @@
-.body-contact
-  background: #fff
-#contato-container
-  h1
-    color: #000
-    margin-top: 15rem
-    text-transform: uppercase
-  p
-    @extend %font 
-    font:
-      size: 15px
-      weight: 600  
-  .contact-form
-    border: 1px solid $laranja 
-    padding: 25px
-    margin-top: 5rem
+.contact-form
+  border: 1px solid $laranja 
+  padding: 25px
+  margin-bottom: 50px
   .form-group
     input, select, textarea
       border: 1px solid rgba(0, 0, 0, 0.2)
       background: #f2f2f2
       border-radius: 0 
-      height: 4.5rem 
+      height: 3rem 
       color:#727272 !important
       font:
         size: 18px
+        weight: 600
       color: #aaaaaa !important
       &:focus
-        border-color: $laranja     
+        border-color: $laranja
+        box-shadow: none
     @include placeholder
       color: #aaaaaa !important 
-      font-size: 18px
+      font:
+        size: 18px
+        weight: 600
     textarea
-      height: 220px           
-#enviar-btn
-  padding: 0 10rem 0 10rem 
+      height: 240px
   button
-    margin: 30px 0 20px 0 
+    margin: 30px auto
     @extend %color-branco
     @extend %back-laranja
     @extend %t-3s
@@ -42,29 +32,19 @@
     &:hover
       @extend %color-laranja
       @extend %back-transparent
-    span
+    i
       margin-left: 10px
     @include tablet-mini
-      width: 100%    
-.second-section
-  display: flex
-  flex-flow: row
-  justify-content: space-around
-  @include tablet-mini
-    flex-flow: column
-.captcha
-  margin-bottom: 30px
+      width: 100%           
 .box
-  margin-top: 10rem
+  margin-top: 5rem
   margin-bottom: 5rem
   @include tablet-mini
     margin-top: 0
-
   .icon
     text-align: center
-    position: relative
     .image
-      position: relative
+      @extend %p-relative
       z-index: 2
       margin: auto
       width: 88px
@@ -73,28 +53,32 @@
       line-height: 88px
       border-radius: 50%
       @extend %back-laranja
-      vertical-align: middle
+      vertical-align: middle  
       i
         font-size: 36px !important
-        color: #fff !important  
+        color: #fff !important 
     .info
       margin-top: -24px
       background: rgba(0, 0, 0, 0.04)
       border: 1px solid #e0e0e0
       padding: 15px 0 10px 0
       min-height: 155px
+      @extend %font
+      @include tablet-mini
+        padding: 0
       h3
-        font-family: "Robot, sans-serif"
         font-size: 16px
         color: #222
-        font-weight: 700
+        font-weight: bold
+        margin-top: 30px
       p
-        font-family: "Robot, sans-serif" 
-        font-size: 13px
         color: #666
         line-height: 1.5em
         margin: 20px
+        font:
+          size: 14px
+          weight: bold
       i
         color: #39a323
         font-size: 18px 
-        margin-right: 5px 
+        margin-right: 5px       

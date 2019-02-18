@@ -12,7 +12,7 @@
 ?>
 <header id="header"><?php require_once "includes/header.php" ?></header>
 <main>
-   <section id="partners">
+   <section id="partners" title="Parceiros da Infoco Publicidades">
       <div class="container">
          <div class="row">
             <div class="items-esquerda col-lg-8 col-md-12 col-sm-12">

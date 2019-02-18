@@ -1,67 +1,21 @@
-.sobre-body
+.sobre
   background: #f8f8f8
-#sobre
-  padding-top: 15rem
-  #container
-    background: #FFF
-    padding: 3rem 
-    box-shadow: 2px 5px 15px -7px #000
-    border-radius: 5px
-  h2
-    color: #424242
-    font:
-      size: 37px
-      weight: 600  
-  .frase
-    font-weight: bold
-    color: #969696
-  .about
-    padding: 20px
-    p
-      @extend %font
-      color: #7d7d7d
-      text-align: justify 
-      font-size: 18px
-            
-
-.empresa-table
-  text-align: center
-  @include pc-md
-    width: 100% 
-    display: flex 
-    padding: 0
-  @include celular
-    justify-content: center   
-  @include celular-md
-    flex-flow: column
-  li
-    @include tablet-mini
-      padding: 0
-       
-.empresa-content
-  span
-    border-radius: 100%
-    @extend %d-inline-block  
-    font-size: 8rem
-    line-height: 117px
-    text-align: center
-    width: 117px
-    @extend %color-laranja
-  .empresa-title
-    color: #525252
-    text-transform: uppercase
+  .container
+    @extend %back-branco
+.about
+  p
+    @extend %font
+    color: #7d7d7d
+    text-align: justify 
     font-size: 18px
-    border-bottom: 1px solid #bbbbbb
-    margin-top: 32px
-    padding-bottom: 17px
-    p 
-      color: #7d7d7d
-      font-size: 15px
-    
 .how-section1
   margin-top: -3%
-  position: relative
+  @extend %p-relative
   padding: 10%
+  @include tablet-mini
+    padding: 0
+  @include celular-md
+    padding: 5%  
   h4
     color: orange
     font-weight: bold
@@ -75,12 +29,6 @@
   p
     color: #7d7d7d
     font-size: 15px  
-.how-img
-  text-align: center
-  img
-    width: 50%
-    @include tablet-mini
-      width: 30% 
 .invertido
     float: left
     text-align: right
@@ -98,55 +46,32 @@
       border-right-width: 14px
       border-left-width: 0    
 
-.desc
-  margin-top: 23px
-  
-.pc 
-  @include tablet-mini
-    padding-top: 18rem
-    img
-      position: absolute
-      bottom: 18rem
-      left: 0
-      right: 0
-      display: block
-      margin: 0 auto
-      @include celular-md
-        bottom: 25rem
-      @include celular-xs
-        bottom: 30rem  
-    
-.globo    
-  @include tablet-mini
-    padding-top: 18rem
-    @include celular-md
-      padding-top: 12rem
-    img
-      position: absolute
-      bottom: 17rem
-      left: 0
-      right: 0
-      display: block
-      margin: 0 auto
-      @include celular-md
-        bottom: 23rem 
-      @include celular-s
-        bottom: 30rem  
-      @include celular-xs
-        bottom: 35rem   
-.itens-redes-sociais
-  border: 1px solid #f0f0f0
-  padding: 30px
+.how-img
   text-align: center
-  border-radius: 0 0 3px 0
-  box-shadow: 2px 5px 15px -7px #000
-  @include celular 
-    width: 92% 
-    margin: 0 auto
-   
-
-.item-facebook
-  margin: 0 0 30px 0
-  box-shadow: 2px 5px 15px -7px #000
+  img
+    width: 50%
+    @include tablet-mini
+      width: 65% 
+    @include celular
+      width: 45%  
+.desc
+  margin-top: 23px      
+.globo, .networking 
   @include celular
-    margin: 0 auto 30px
+    padding-top: 18rem
+  @include celular-xs
+    padding-top: 10rem  
+  .txt-about
+    @include tablet-mini
+      min-width: 50% 
+  img
+    @include celular
+      position: absolute
+      left: 0
+      bottom: 15rem 
+      right: 0
+      display: block
+      margin: 0 auto        
+
+
+

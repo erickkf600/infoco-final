@@ -1,0 +1,36 @@
+[12-Feb-2019 19:16:39 UTC] PHP Warning:  Missing argument 5 for PagamentoMP::PagarMP(), called in /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php on line 48 and defined in /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php on line 21
+[12-Feb-2019 19:16:40 UTC] PHP Fatal error:  Uncaught MercadoPagoException: unit_price must be a number in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php:533
+Stack trace:
+#0 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(562): MPRestClient::exec(Array)
+#1 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(214): MPRestClient::post(Array)
+#2 /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php(47): MP->create_preference(Array)
+#3 /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php(48): PagamentoMP->PagarMP('1', 'Tetse de paganm...', '1500', 'http://localhos...')
+#4 {main}
+  thrown in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php on line 533
+[12-Feb-2019 19:18:41 UTC] PHP Warning:  Missing argument 5 for PagamentoMP::PagarMP(), called in /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php on line 48 and defined in /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php on line 21
+[12-Feb-2019 19:18:42 UTC] PHP Fatal error:  Uncaught MercadoPagoException: unit_price must be a number in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php:533
+Stack trace:
+#0 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(562): MPRestClient::exec(Array)
+#1 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(214): MPRestClient::post(Array)
+#2 /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php(47): MP->create_preference(Array)
+#3 /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php(48): PagamentoMP->PagarMP('1', 'Tetse de paganm...', '1500', 'http://localhos...')
+#4 {main}
+  thrown in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php on line 533
+[12-Feb-2019 19:18:45 UTC] PHP Warning:  Missing argument 5 for PagamentoMP::PagarMP(), called in /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php on line 48 and defined in /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php on line 21
+[12-Feb-2019 19:18:46 UTC] PHP Fatal error:  Uncaught MercadoPagoException: unit_price must be a number in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php:533
+Stack trace:
+#0 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(562): MPRestClient::exec(Array)
+#1 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(214): MPRestClient::post(Array)
+#2 /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php(47): MP->create_preference(Array)
+#3 /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php(48): PagamentoMP->PagarMP('1', 'Tetse de paganm...', '1500', 'http://localhos...')
+#4 {main}
+  thrown in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php on line 533
+[12-Feb-2019 19:19:16 UTC] PHP Warning:  Missing argument 5 for PagamentoMP::PagarMP(), called in /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php on line 47 and defined in /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php on line 21
+[12-Feb-2019 19:19:17 UTC] PHP Fatal error:  Uncaught MercadoPagoException: unit_price must be a number in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php:533
+Stack trace:
+#0 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(562): MPRestClient::exec(Array)
+#1 /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php(214): MPRestClient::post(Array)
+#2 /home4/infoco58/public_html/vendor/marcadoPago/PagamentoMP.php(47): MP->create_preference(Array)
+#3 /home4/infoco58/public_html/vendor/marcadoPago/pagamento.php(47): PagamentoMP->PagarMP('1', 'Tetse de paganm...', '1500', 'https://infocom...')
+#4 {main}
+  thrown in /home4/infoco58/public_html/vendor/marcadoPago/MercadoPago/lib/mercadopago.php on line 533

@@ -1,29 +1,12 @@
-.confira
-  h2
-    padding-top: 15rem
-    color: #3d3d3d
-    letter-spacing: 2px 
-    font:
-      family: sans-serif
-      size: 3rem
-      weight: 900   
+.confira 
   p
     letter-spacing: 2px
     color: #3d3d3d
     font:
       family: sans-serif
       size: 18px 
-      weight: 600
-.artes
-  p
-    font-size: 15px
-
-.tabela 
-  h1
-    font-size: 25px
-    
-#bg-laranja
-  background: #ea923a    
+      weight: 600   
+   
 .list-mobile
   display: none
   @extend %color-branco
@@ -34,55 +17,68 @@
   @include tablet-mini
     display: block 
 .beneficios
+  border-left: solid 2px #e5a253
   @include tablet-mini
     display: none 
-  li
-    @extend %back-laranja
-    border-bottom: 2px solid #e5a253
-    color: #f1f1f1
-    font:
-      size: 16px
-      weight: 600
-    padding: 15px 24px
-    &:hover
-      background: #e5a253
-      cursor: pointer
-      @include transition(all .35s)
   h1
-    border-top-left-radius: 20px
     margin: 5rem 0 0 0
     padding-bottom: 10rem
     text-align: center 
+  li
+    border-bottom: 2px solid #e5a253
+    @extend %color-laranja
+    height: 55px
+    line-height: 55px 
+    padding-left: 10px 
+    font:
+      size: 16px
+      weight: 600
 
-.tabela-plano, .fim 
+.tabela-plano
   li
     background: #fff
     border-bottom: 2px solid #d4d4d4
     text-align: center
     cursor: pointer
-    padding: 10.55px 24px
-    @include pc-md
-      padding: 13.35px 24px
-    &:hover
-      background: #dedede
-      @include transition(all .35s)
-       
+    height: 55px 
+    line-height: 55px
+  h2
+    text-align: center
+    color: white
+    padding-top:0.2em
+    padding-bottom:0.2em
+    @include tablet
+      font-size: 21px
+.basico
+  h2
+    background: rgb(72, 109, 139)  
+  li
+    background: rgb(224,234,242)
+.medio
+  h2
+    background: #829e4b
+  li
+    background: #e6ebda
+.avancado
+  h2
+    background: #f4c842
+  li
+    background: #fff3d3 
+.super
+  h2
+    background: #9e4b4b
+  li
+    background: #ffd3d3            
 
-.beneficios, .tabela-plano, .fim
-  h1
-    background: #001e82
-     border-left: 2px solid #ccc
+.beneficios
+  h2
+    text-align: center
     @extend %color-branco
-    font-weight: 600
-    padding: 19px 21px
-    text:
-      transform: uppercase
-      align: center
+    padding-top:0.2em
+    padding-bottom:0.2em
+    background: rgb(255, 135, 28, .8)
     @include tablet
       font-size: 21px  
-.fim 
-  h1
-    border-top-right-radius: 20px
 .tabela-plano 
   padding-bottom: 5rem
   li
@@ -90,6 +86,7 @@
     @include tablet-mini
       display: flex   
       justify-content: space-between
+      padding: 10px
     span
       display: none
       @include tablet-mini
@@ -101,55 +98,42 @@
     margin: 5rem 0 0 0    
 
 .fa
+  font-size: 25px
   &.fa-check
     color: #2cc14f
+    box-shadow: 0px 0px 11px -5px #000
+    border-radius: 50px
+    padding: 4px
+    border: 1px solid
+    @extend %back-branco
   &.fa-times
     color: #BA5340
-  font-size: 30px
+    box-shadow: 0px 0px 11px -5px #000
+    border-radius: 100px
+    padding: 5px 10px
+    @extend %back-branco
+    border: 1px solid
 
 .no-padding, ul
   padding: 0
 
-
 .logos
-  padding: 10rem 0 10rem
+  padding: 3rem 0 5rem
   @include celular
     padding: 0
   text-align: center
   img
     width: 40% 
     align-items: center
-    margin-top: 3rem
     @include tablet-mini
       width: 25% 
   h3
-    letter-spacing: 1.2px 
-    font: 
-      size: 25px
-      weight: 900  
-
-.contato-text, .adesao-btn
-  text-align: center
-  padding-bottom: 60px
-  p
-    padding-bottom: 10px
-    letter-spacing: 1.2px 
+    @extend %spacing
     font: 
       size: 25px
       weight: 900
-    @include tablet-mini
-      font-size: 20px  
-  a
-    border: 3px solid $laranja
-    padding: 10px 20px 10px 20px
-    @extend %color-laranja
+  p
     font-weight: 600 
-    @include transition(.3s)
-    &:hover
-      @extend  %color-branco
-      @extend %back-laranja
-      text-decoration: none
-.adesao-btn
-  a
-    font-size: 25px    
+    @extend %spacing     
+  
  

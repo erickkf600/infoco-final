@@ -49,5 +49,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script> 
   <script type="text/javascript" src="http://localhost/INFOCO%20FINAL/assets/js/script.js"></script> 
   <script async defer src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 </html>
