@@ -40,7 +40,7 @@
   <title>InFoco Publicidades: rede de networking | plataforma digital</title>
 </head>
 <body>
-  <!--<div id="preloader"><div class="loader"></div></div>-->
+  <div class="loader text-center"><span class="span"></span></div>
   <a class="scrollToTop" href="#" title="voltar ao topo infoco"><i class="fas fa-chevron-up"></i></a>	
   <?php require load(); ?>
 

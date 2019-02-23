@@ -1,0 +1,41 @@
+.secao
+  h1
+    text-align: center
+    margin-top: 2rem
+    font-size: 35px
+  .container
+    width: 100%
+    padding-right: 20px
+    padding-left: 20px
+    margin: 0 auto
+    .linha
+      @extend %d-flex
+      justify-content: center
+      align-items: center
+      flex-wrap: wrap
+      a
+        margin: 40px 20px 0 20px
+        text-decoration: none
+        @extend %t-3s
+        padding: 4rem 3rem 4rem 3rem
+        font-size: 1.25rem
+        line-height: 0
+        border-radius: 0.3rem
+      .vermelho
+        @extend %color-branco
+        background: #d9534f
+        border-color: #d43f3a 
+      .amarelo
+        @extend %color-branco
+        background: #f0ad4e
+        border-color: #f0ad4e 
+      .azul
+        @extend %color-branco
+        background: #3276b1
+        border-color: #3276b1 
+      .verde
+        @extend %color-branco
+        background: #28a745
+        border-color: #28a745             
+  
+    

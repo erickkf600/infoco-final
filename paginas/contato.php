@@ -4,7 +4,7 @@
 	<section class="contato-form">
 		<div class="container">
 			<div class="cabecalho mt-3">
-				<h1 class="titulo" title="Bem-Vindo a infoco">CONTATO</h1>
+				<h1 class="titulo" title="Contato Infoco">CONTATO</h1>
 				<span class="linha-titulo"></span>
 				<p>Duvidas, Sugestões, Reclamações? Fale Conosco.</p>
 			</div>
@@ -72,11 +72,11 @@
 						<button class="btn w-50" type="submit" id="enviarMensagem">ENVIAR<i class="fas fa-paper-plane"></i></button>
 						<?php 
 						if(!empty($_SESSION['email_enviado'])){
-							echo "<p style='color: #01ad01; '>".$_SESSION['email_enviado']."</p>";
+							echo "<p class='text-center h2' style='color: #01ad01; '>".$_SESSION['email_enviado']."</p>";
 							unset($_SESSION['email_enviado']);
 						}else{
 							if(!empty($_SESSION['email_erro'])){
-								echo "<p style='color: #f00; '>".$_SESSION['email_erro']."</p>";
+								echo "<p class='text-center h2' style='color: #f00; '>".$_SESSION['email_erro']."</p>";
 								unset($_SESSION['email_erro']);
 							}
 						}  

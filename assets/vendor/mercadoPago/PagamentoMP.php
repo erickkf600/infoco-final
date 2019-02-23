@@ -12,7 +12,7 @@ class PagamentoMP{
 	public $info = array();
 	// Se for em modo de teste, esta variável recebe true, caso
 	// contrário o sistema estará em modo de produção
-	private $sandbox = false;
+	private $sandbox = true;
 	// Suas credenciais do mercado pago
 	private $client_id = "7478186258228726";
 	private $client_secret = "QR5HNcfvk7dsXoXn2N3LXw1Rgcl4ZtW0";

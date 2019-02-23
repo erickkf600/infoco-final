@@ -3,7 +3,7 @@
 	<section class="sobre" title="O que é a Infoco Publicidades">
 		<div class="container">
 			<div class="cabecalho mt-3">
-				<h1 class="titulo" title="Bem-Vindo a infoco">QUEM SOMOS</h1>
+				<h1 class="titulo" title="O que é a infoco publicidades">QUEM SOMOS</h1>
 				<span class="linha-titulo"></span>
 				<p class="font-weight-bold font-italic">"Se você não é o maior, então seja o melhor."</p>
 			</div>

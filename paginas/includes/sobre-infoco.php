@@ -43,7 +43,7 @@
         <h2 title="Saiba um pouco mais sobre a infoco">Um pouco sobre a <span>InFoco</span></h2>
         <span class="linha-titulo"></span>
         <p>Somos uma empresa do segmento de publicidade, que chega ao mercado para oferecer o melhor em divulgação e veiculação da sua empresa promovendo um marketing digital eficaz, que gere resultados positivos e satisfatórios ao seu negócio.</p> 
-        <a href="adesao" class="btn botao" title="Faça a sua adesão na infoco">FAÇA A SUA ADESÃO</a>
+        <a href="https://infocomn.com.br/adesao" class="btn botao" title="Faça a sua adesão na infoco">FAÇA A SUA ADESÃO</a>
     </div>
   </div>
 </section>

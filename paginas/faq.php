@@ -3,7 +3,7 @@
 	<section id="faq" title="Perguntas Frequentes da Infoco Publicidades" style="padding-bottom: 30px">
 		<div class="container">
 			<div class="cabecalho mt-3">
-				<h1 class="titulo" title="Bem-Vindo a infoco">PERGUNTAS FREQUENTES</h1>
+				<h1 class="titulo" title="Perguntas e respostas infoco">PERGUNTAS FREQUENTES</h1>
 				<span class="linha-titulo"></span>
 			</div>
 			<div class="perguntas">

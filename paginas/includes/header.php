@@ -18,8 +18,8 @@
       <li><a href="https://infocomn.com.br/categoria/beleza" title="infoco beleza"><i class="fas fa-grin"></i>Beleza</a></li>
       <li><a href="https://infocomn.com.br/categoria/educacao" title="infoco educacao"><i class="fas fa-graduation-cap"></i>Educação</a></li>
       <li><a href="https://infocomn.com.br/categoria/servicos" title="infoco servicos"><i class="fas fa-cogs"></i>Serviços</a></li>
-      <li><a href="https://infocomn.com.br/categoria.php/lazer" title="infoco lazer"><i class="fas fa-umbrella-beach"></i>Lazer</a></li>
-      <li><a href="https://infocomn.com.br/categoria.php/alimentacao" title="infoco alimentacao"><i class="fas fa-utensils"></i>Alimentação</a></li>
+      <li><a href="https://infocomn.com.br/categoria/lazer" title="infoco lazer"><i class="fas fa-umbrella-beach"></i>Lazer</a></li>
+      <li><a href="https://infocomn.com.br/categoria/alimentacao" title="infoco alimentacao"><i class="fas fa-utensils"></i>Alimentação</a></li>
     </ul>
   </nav>
   <nav class="navbar navbar-default main-navbar">  

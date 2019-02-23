@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 require "assets/vendor/autoload.php";
-$link = 'https://infocomn.com.br/contato';
+$link = 'http://localhost/INFOCO%20FINAL/contato';
 session_start();
 $post = filter_input_array(INPUT_POST, FILTER_DEFAULT);
 $nome = $post['nome'];
@@ -12,7 +12,6 @@ $mensagem = $post['mensagem'];
 
 $motivo = $_POST['motivo'];
 $captcha = $_POST['g-recaptcha-response']; 
-$url = "contato.php";
 if (isset($captcha)) {
 	$secreto = '6Le3L4wUAAAAACyaYvObGJwmn9j2ymwui3ecSapV';
 	$ip = $_SERVER['REMOTE_ADDR'];
@@ -47,9 +46,9 @@ if (empty($mensagem)) {
 }
 
 if ($motivo == 'comercial') {
-	$destino = 'comercial@infocomn.com.br';
+	$destino = 'erickkf600@gmail.com';
 }else{
-	$destino = 'administrativo@infocomn.com.br';
+	$destino = 'geekkiing@gmail.com';
 }
 
 	//ENVIAR A MENSAGEM

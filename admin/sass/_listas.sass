@@ -1,0 +1,35 @@
+.card-collapse
+  margin: 5rem auto	
+  border-radius: 0.25rem
+  border: none
+  .card
+    margin-bottom: 2px
+    &:nth-child(even)
+      background: #ededed
+      &:hover
+        background: #f7f7f7
+    .card-header
+      @extend %p-relative
+      padding: 5px
+      border: none
+      cursor: pointer
+      @extend %t-3s
+      &:hover
+        background: #EAEAEA
+      i
+        @extend %p-absolute
+        font-size: 35px 
+        @extend %p-absolute
+        right: 1%
+        top: 15px 
+        @extend %color-laranja 
+    .waraper
+      padding: 20px
+      .card
+        @extend %back-branco
+        border: 1px solid #FFC107
+        .atua
+          margin: 0 auto
+          display: block 
+          
+

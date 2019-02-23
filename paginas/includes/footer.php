@@ -40,9 +40,16 @@
 			<a href="https://www.youtube.com/channel/UC7HtOoQ4BbvBaYUwBpI8dEg" target="_blank"><i class="fab fa-youtube"></i></a>
 		</div>
 	</div>
-	<div class="text-center sub-footer">
-	    <p>Copyright © <a href="licenca.xml" target="_blank">Direitos autorais</a> 2019 | InFoco | Desenvolvido por 
-		<a href="https://github.com/erickkf600" target="_blank">Erick Ferreira</a>
-		
-	</div>
-</section>
+	<div class="sub-footer">
+		<div class="text-footer">
+			<p>Copyright © <a href="licenca.xml" target="_blank">Direitos autorais</a> 2019 | InFoco | Desenvolvido por 
+				<a href="https://github.com/erickkf600" target="_blank">Erick Ferreira</a>
+			</div>
+			<div class="">
+				<div class="row">
+					<img src="http://localhost/INFOCO%20FINAL/assets/img/mpag-footer.png">
+					<img src="http://localhost/INFOCO%20FINAL/assets/img/selo.png">
+				</div>
+			</div>
+		</div>
+	</section>

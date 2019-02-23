@@ -44,6 +44,8 @@
 .sub-footer
   min-width: 100% 
   padding: 14px 0px
+  @extend %d-flex 
+  justify-content: space-between 
   @extend %back-transparent
   border-top: 1px solid #ccc
   color: #888d90
@@ -52,4 +54,6 @@
     size: 17px
     weight: 600
   a
-    color: #5a5b5b 
+    color: #5a5b5b
+  .text-footer
+    margin: 0 auto       

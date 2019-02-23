@@ -32,6 +32,10 @@
         </div>";
       }
       ?>
+      <div class="carousel-item">
+        <img src='https://infocomn.com.br/img/banners/infoco.jpg' width='100%' alt='Infoco Publicidades' title="Infoco Publicidades">
+        <a href="https://infocomn.com.br/adesao" title="adesão infoco" class="btn link-infoco">FAÇA SUA ADESÃO</a>
+      </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
       <span class="proximo"><i class="far fa-caret-square-left fa-3x"></i></span>
