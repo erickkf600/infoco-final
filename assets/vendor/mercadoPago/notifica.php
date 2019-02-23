@@ -4,7 +4,7 @@
    
    require_once "MercadoPago/lib/mercadopago.php";
    require_once "PagamentoMP.php";
-   include "../../banco.php";         
+   include "../../../banco.php";          
    
    $pagar = new PagamentoMP;
    
@@ -18,10 +18,10 @@
    $retorno = $pagar->Retorno($id , $con);
    if($retorno){
       // Redirecionar usuario
-      header("location: ../../adesao");
+      header("location: http://localhost/INFOCO%20FINAL/adesao");
    }else{
      // Redirecionar usuario e informar erro ao admin
-      header("location: ../../home");
+      header("location: http://localhost/INFOCO%20FINAL/adesao");
       
       /*
        

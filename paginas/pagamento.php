@@ -6,14 +6,13 @@
   require_once "assets/vendor/mercadoPago/MercadoPago/lib/mercadopago.php";
   require_once "assets/vendor/mercadoPago/PagamentoMP.php";
   $pagar = new PagamentoMP;
-  $buscador = $conectar->prepare("SELECT * from fichaadesao where ref=:ref LIMIT 1");
+  $buscador = $conectar->prepare("select fichaadesao.nome, fichaadesao.plano, fichaadesao.id
+  , fatura.valor from fichaadesao inner join fatura on fichaadesao.cnpj=fatura.cnpj where ref=:ref limit 1");
   $buscador -> bindValue(':ref', $ref, PDO::PARAM_STR);
   $buscador->execute();
   $fat = $buscador->fetch(PDO::FETCH_OBJ);
   $nome = $fat->nome;
   $id = $fat->id; 
-  $cnpj = $fat->cnpj;  
-  $cep = $fat->cep; 
   $plano = $fat->plano;
   $valor = $fat->valor;
   $total = $valor + 200;

@@ -43,7 +43,7 @@
 	<div class="sub-footer">
 		<div class="text-footer">
 			<p>Copyright © <a href="licenca.xml" target="_blank">Direitos autorais</a> 2019 | InFoco | Desenvolvido por 
-				<a href="https://github.com/erickkf600" target="_blank">Erick Ferreira</a>
+				<a href="https://github.com/erickkf600" target="_blank" class="text-light">Erick Ferreira</a>
 			</div>
 			<div class="">
 				<div class="row">

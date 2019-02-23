@@ -110,8 +110,14 @@ class PagamentoMP{
 		endswitch;
 
 		$ref = $payment_info["response"]["collection"]["external_reference"];
-		$query = mysqli_query($con,"UPDATE fichaadesao SET tipoPagamento='$forma', situação='$status' WHERE ref='$ref'");
-        if($query){
+		$buscador = $conectar->prepare("UPDATE fatura SET 
+			tipoPagamento= :forma, 
+			situacao= :status 
+			WHERE ref= :ref");
+  		$buscador -> bindValue(':forma', $forma, PDO::PARAM_STR);
+  		$buscador -> bindValue(':status', $status, PDO::PARAM_STR);
+  		$buscador -> bindValue(':ref', $ref, PDO::PARAM_STR);
+        if($insert = $buscador -> rowCount() > 0){
          return true;
       }else{
       	echo "erro";

@@ -7,7 +7,7 @@
         <li><a href="https://infocomn.com.br/home" class="home"  title="Pagina inicial infoco">HOME</a></li>
         <li><a href="https://infocomn.com.br/contato" title="Pagina contato infoco">CONTATO</a></li>
         <li><a href="https://infocomn.com.br/planos" title="Pagina planos infoco">PLANOS</a></li>
-        <li><a href="https://infocomn.com.br/sobre" title="Pagina quem somos infoco">QUEM SOMOS</a></li>
+        <li><a href="https://infocomn.com.br/quem-somos" title="Pagina quem somos infoco">QUEM SOMOS</a></li>
         <li><a href="https://infocomn.com.br/parceiros/1" title="Pagina novidades infoco">PARCEIROS</a></li>
         <li><a href="https://infocomn.com.br/faq" title="Pagina perguntas frequentes infoco">FAQ</a></li>
       </span>
@@ -35,7 +35,7 @@
          <li><a href="https://infocomn.com.br/home" class="home"  title="Pagina inicial infoco">HOME</a></li>
          <li><a href="https://infocomn.com.br/contato" title="Pagina contato infoco">CONTATO</a></li>
          <li><a href="https://infocomn.com.br/planos" title="Pagina planos infoco">PLANOS</a></li>
-         <li><a href="https://infocomn.com.br/sobre" title="Pagina quem somos infoco">QUEM SOMOS</a></li>
+         <li><a href="https://infocomn.com.br/quem-somos" title="Pagina quem somos infoco">QUEM SOMOS</a></li>
          <li><a href="https://infocomn.com.br/parceiros/1" title="Pagina novidades infoco">PARCEIROS</a></li>
          <li><a href="https://infocomn.com.br/faq" title="Pagina perguntas frequentes infoco">FAQ</a></li>            
        </ul>                            

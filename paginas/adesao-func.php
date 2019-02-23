@@ -50,7 +50,6 @@
 	bairro, 
 	numero,
 	plano,
-	valor,
 	telefone,
 	celular,
 	whastapp,
@@ -58,9 +57,7 @@
 	facebook,
 	instagram,
 	twitter,
-	site,
-	tipoPagamento,
-	ref)
+	site)
 	values(
 	 :nome, 
 	 :cnpj, 
@@ -75,7 +72,6 @@
 	 :bairro, 
 	 :numero,
 	 :plano,
-	 :valor,
 	 :telefone,
 	 :celular,
 	 :whastapp,
@@ -83,9 +79,7 @@
 	 :facebook,
 	 :instagram,
 	 :twitter,
-	 :site,
-	 :forma,
-	 :ref)");
+	 :site)");
 	$inserir -> bindParam(':nome', $nome, PDO::PARAM_STR);
 	$inserir -> bindParam(':cnpj', $cnpj, PDO::PARAM_STR);
 	$inserir -> bindParam(':nomeFantasia', $nomeFantasia, PDO::PARAM_STR);
@@ -99,7 +93,6 @@
 	$inserir -> bindParam(':bairro', $bairro, PDO::PARAM_STR);
 	$inserir -> bindParam(':numero', $numero, PDO::PARAM_STR);
 	$inserir -> bindParam(':plano', $plano, PDO::PARAM_STR);
-	$inserir -> bindParam(':valor', $valor, PDO::PARAM_STR);
 	$inserir -> bindParam(':telefone', $telefone, PDO::PARAM_STR);
 	$inserir -> bindParam(':celular', $celular, PDO::PARAM_STR);
 	$inserir -> bindParam(':whastapp', $whastapp, PDO::PARAM_STR);
@@ -108,11 +101,17 @@
 	$inserir -> bindParam(':instagram', $instagram, PDO::PARAM_STR);
 	$inserir -> bindParam(':twitter', $twitter, PDO::PARAM_STR);
 	$inserir -> bindParam(':site', $site, PDO::PARAM_STR);
-	$inserir -> bindParam(':forma', $forma, PDO::PARAM_STR);
-	$inserir -> bindParam(':ref', $ref, PDO::PARAM_STR);
-	$inserir->execute();
-	if ($inserir) {
-		$buscador = $conectar->prepare("SELECT * from fichaadesao where ref=:ref LIMIT 1");
+	if($inserir->execute()){
+	$inserirFA = $conectar->prepare("insert into fatura(ref, tipoPagamento, valor, cnpj)
+	values(:ref, :tipoPagamento, :valor, :cnpj)");
+	$inserirFA -> bindParam(':ref', $ref, PDO::PARAM_STR);
+	$inserirFA -> bindParam(':tipoPagamento', $forma, PDO::PARAM_STR);
+	$inserirFA -> bindParam(':valor', $valor, PDO::PARAM_STR);
+	$inserirFA -> bindParam(':cnpj', $cnpj, PDO::PARAM_STR);
+	$inserirFA->execute();
+    }
+	if ($inserirFA) {
+		$buscador = $conectar->prepare("SELECT * from fatura where ref=:ref LIMIT 1");
  		$buscador -> bindValue(':ref', $ref, PDO::PARAM_STR);
  		$buscador->execute();
  		if ($buscador) {
